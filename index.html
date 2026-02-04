@@ -3,91 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulls Precision | Advanced Fiber Optic Polishing Solutions</title>
+    <title>Bulls Precision | Next-Gen Fiber Polishing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fff; }
-        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(241, 245, 249, 1); }
-        .hero-bg { background: radial-gradient(circle at 100% 0%, #f0f7ff 0%, #fff 50%); }
+        .hero-gradient {
+            background: radial-gradient(circle at 70% 30%, rgba(59, 130, 246, 0.15) 0%, rgba(255, 255, 255, 1) 70%);
+        }
+        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .float-anim { animation: float 5s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
     </style>
 </head>
-<body class="hero-bg text-slate-900">
-
-    <!-- Navbar -->
-    <nav class="sticky top-0 z-50 glass-card px-8 py-4 flex justify-between items-center max-w-7xl mx-auto mt-4 rounded-2xl shadow-sm">
-        <div class="text-xl font-extrabold tracking-tighter">BULLS<span class="text-blue-600">PRECISION</span></div>
-        <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-500">
-            <a href="#products" class="hover:text-blue-600 transition">Products</a>
-            <a href="#solutions" class="hover:text-blue-600 transition">Solutions</a>
-            <a href="#about" class="hover:text-blue-600 transition">About Us</a>
+<body class="hero-gradient min-h-screen">
+    <nav class="sticky top-0 z-50 glass-nav px-12 py-6 flex justify-between items-center">
+        <div class="text-2xl font-black tracking-tighter text-slate-900">BULLS<span class="text-blue-600">PRECISION</span></div>
+        <div class="hidden md:flex space-x-12 text-xs font-bold uppercase tracking-widest text-slate-400">
+            <a href="#" class="hover:text-blue-600 transition">Solutions</a>
+            <a href="#" class="hover:text-blue-600 transition">Bulls-5000</a>
+            <a href="#" class="hover:text-blue-600 transition">About</a>
         </div>
-        <button class="bg-slate-900 text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-blue-600 transition">Inquiry Now</button>
+        <button class="bg-slate-900 text-white px-6 py-2 rounded-full font-bold text-xs hover:bg-blue-600 transition">CONTACT SALES</button>
     </nav>
-
-    <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-8 pt-24 pb-32 flex flex-col md:flex-row items-center">
+    <header class="max-w-7xl mx-auto px-12 pt-24 pb-32 flex flex-col md:flex-row items-center">
         <div class="md:w-1/2">
-            <span class="text-blue-600 font-bold text-sm tracking-widest uppercase mb-4 block">World-Class Polishing Tech</span>
-            <h1 class="text-6xl md:text-7xl font-extrabold leading-tight mb-6">Mastering <span class="text-blue-600">800G</span> Connectivity.</h1>
-            <p class="text-lg text-slate-500 mb-10 max-w-lg leading-relaxed">
-                Bulls Technology provides high-precision polishing machines and fixtures for MPO/MTP, bare fiber, and PM fiber processing. Trusted by global leaders.
-            </p>
-            <div class="flex space-x-4">
-                <a href="#products" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-blue-200 hover:scale-105 transition">Explore Products</a>
-                <button class="bg-white border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition">Process Guides</button>
+            <h1 class="text-7xl font-extrabold text-slate-900 leading-[1.1] mb-8">Mastering <span class="text-blue-600">800G</span> Yields.</h1>
+            <p class="text-lg text-slate-500 mb-12 max-w-md leading-relaxed">The Bulls-5000 delivers consistent 100% 3D pass rates with our patented technology. Optimized for AI data centers.</p>
+            <div class="flex items-center space-x-6">
+                <button class="bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold shadow-2xl shadow-blue-200 hover:scale-105 transition">Order Now</button>
+                <div class="h-12 w-px bg-slate-200"></div>
+                <div class="flex flex-col"><span class="text-2xl font-black text-slate-900">100%</span><span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">3D Pass</span></div>
             </div>
         </div>
-        <div class="md:w-1/2 mt-20 md:mt-0 flex justify-center relative">
-            <div class="absolute inset-0 bg-blue-100 blur-3xl rounded-full opacity-30 animate-pulse"></div>
-            <img src="bulls-5000.png" alt="Bulls-5000" class="relative z-10 w-full max-w-lg drop-shadow-2xl">
+        <div class="md:w-1/2 mt-20 md:mt-0 relative flex justify-center">
+            <div class="absolute inset-0 bg-blue-200 blur-[100px] rounded-full opacity-20"></div>
+            <img src="bulls-5000.png" alt="Bulls-5000" class="relative z-10 w-full max-w-lg float-anim drop-shadow-[0_50px_50px_rgba(59,130,246,0.15)]">
         </div>
-    </section>
-
-    <!-- Product Matrix -->
-    <section id="products" class="max-w-7xl mx-auto px-8 py-24 border-t border-slate-50">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-extrabold mb-4">Precision Product Matrix</h2>
-            <p class="text-slate-500">From standard connectors to specialized optical components.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition shadow-sm">
-                <div class="w-12 h-12 bg-blue-600 rounded-xl mb-6 flex items-center justify-center text-white font-bold">5K</div>
-                <h3 class="text-xl font-bold mb-3">Bulls-5000 Series</h3>
-                <p class="text-sm text-slate-500 leading-relaxed">Flagship MPO/MTP polisher with patented all-bearing structure and programmable pressure control.</p>
-            </div>
-            <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition shadow-sm">
-                <div class="w-12 h-12 bg-slate-900 rounded-xl mb-6 flex items-center justify-center text-white font-bold">LS</div>
-                <h3 class="text-xl font-bold mb-3">Laser Cleaver Ls1000</h3>
-                <p class="text-sm text-slate-500 leading-relaxed">High-efficiency fiber removal to reduce damage and polishing time. Perfect for mass production lines.</p>
-            </div>
-            <div class="glass-card p-8 rounded-3xl hover:-translate-y-2 transition shadow-sm">
-                <div class="w-12 h-12 bg-blue-100 rounded-xl mb-6 flex items-center justify-center text-blue-600 font-bold">PM</div>
-                <h3 class="text-xl font-bold mb-3">PM Fiber PM2000</h3>
-                <p class="text-sm text-slate-500 leading-relaxed">Automated axis adjustment and measurement with ±0.2° precision for polarization-maintaining fibers.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="bg-slate-950 text-white py-24 rounded-[3rem] mx-4 mb-12">
-        <div class="max-w-5xl mx-auto px-8 text-center">
-            <h2 class="text-3xl font-bold mb-8">About Bulls Technology (Polis)</h2>
-            <p class="text-slate-400 text-lg leading-relaxed mb-12">
-                Located in Dongguan, China, we have spent over 15 years perfecting the art of optical fiber polishing. With multiple patents in machine structures and fixtures, Bulls is dedicated to high-yield solutions for the 800G/1.6T era.
-            </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div><p class="text-4xl font-extrabold text-blue-500 mb-2">15+</p><p class="text-xs uppercase text-slate-500 tracking-widest">Years Experience</p></div>
-                <div><p class="text-4xl font-extrabold text-blue-500 mb-2">100%</p><p class="text-xs uppercase text-slate-500 tracking-widest">3D Pass Rate</p></div>
-                <div><p class="text-4xl font-extrabold text-blue-500 mb-2">500+</p><p class="text-xs uppercase text-slate-500 tracking-widest">Global Clients</p></div>
-                <div><p class="text-4xl font-extrabold text-blue-500 mb-2">24h</p><p class="text-xs uppercase text-slate-500 tracking-widest">Service Support</p></div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="text-center py-12 text-slate-400 text-xs uppercase tracking-widest">
-        &copy; 2026 Bulls Precision Technology. All rights reserved.
-    </footer>
-
+    </header>
 </body>
 </html>
